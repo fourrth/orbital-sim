@@ -1,0 +1,13 @@
+**
+*
+
+!pyproject.toml
+
+!.gitignore
+
+!src/
+!src/**
+
+!.python-version
+
+__pycache__

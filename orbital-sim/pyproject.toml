@@ -1,0 +1,27 @@
+[project]
+name = "orbital-sim"
+version = "0.1.0"
+description = "Orbital Simulation python project"
+authors = [
+    { name = "fourrth", email = "fourth@duck.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.5.4",
+]
+
+[project.scripts]
+display = "display:main"
+test = "test:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+source-exclude = ["display","test"]
+
+[dependency-groups]
+dev = [
+    "matplotlib>=3.11.2",
+]
